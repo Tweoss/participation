@@ -126,6 +126,7 @@ function readFile(evt) {
             container = new Map([...temp_container.entries()].sort());
             renderFirst()
             switchContainers()
+            storeData();
         };
         return r.readAsText(f);
     }
