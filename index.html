@@ -10,12 +10,11 @@
 </head>
 
 <body style="background: rgb(33,37,41);">
-    <div class="container" id="first-container">
-        <h1 style="color: var(--light);text-align: center;">Input State</h1><textarea id="textarea" style="width: 100%;height: 25vh;"></textarea>
-        <div class="btn-group" role="group" style="width: 100%;"><button class="btn btn-primary" id="text-input" type="button">Use Text</button><button class="btn btn-primary" id="file-input" type="button">Use File<input type="file" id="file-input-clickable" hidden="" accept=".csv"></button></div>
+    <h1 id="messages" style="color: rgb(224,224,224);text-align: center;">Participation</h1>
+    <div class="container" id="first-container"><textarea id="textarea" style="width: 100%;height: 25vh;"></textarea>
+        <div class="btn-group" role="group" style="width: 100%;"><button class="btn btn-primary" id="cache-input" type="button">Use Cache</button><button class="btn btn-primary" id="text-input" type="button">Use Text</button><button class="btn btn-primary" id="file-input" type="button">Use File<input type="file" id="file-input-clickable" hidden="" accept=".csv"></button></div>
     </div>
     <div class="container" id="second-container" hidden="">
-        <h1 style="color: rgb(224,224,224);text-align: center;">Participation</h1>
         <div>
             <ul class="nav nav-tabs" role="tablist" id="tablist"></ul>
             <div class="tab-content" id="tab-content" style="border-radius: 0;height: 70vh;border-style: none;border-color: var(--blue);"></div>
@@ -33,7 +32,7 @@
 
 
 </div>
-                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-secondary" id="copy-button" type="button" onclick="navigator.clipboard.writeText(document.getElementById(&#39;csv-out&#39;).innerText.replace(/^\n/,&quot;&quot;)); this.innerText = &#39;Copied&#39;; setTimeout(function() {document.getElementById(&#39;copy-button&#39;).innerText = &#39;Copy&#39;;}, 3000);">Copy</button><button class="btn btn-primary" id="download-csv" type="submit" data-dismiss="modal">Download</button></div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-secondary" id="copy-button" type="button">Copy</button><button class="btn btn-primary" id="download-csv" type="submit" data-dismiss="modal">Download</button></div>
                 </div>
             </div>
         </div>
