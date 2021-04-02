@@ -1,1 +1,1 @@
-.codeblock{padding:15px;border:1px solid #666;background:#f4f4f4;color:var(--primary)}.list-group-item{transition:transform 1s;position:relative;height:60px}
+.codeblock{padding:15px;border:1px solid #666;background:#f4f4f4;color:var(--primary)}.list-group-item{transition:transform 1s;position:relative;height:60px;border:2px solid rgba(0,0,0,.125)}
